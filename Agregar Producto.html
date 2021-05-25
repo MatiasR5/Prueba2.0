@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es_cl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="/images/Logo Pasteleria.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <title>Agregar Producto</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+
+</head>
+
+<body background="/images/color-lila-4.png">
+  <header class="header">
+
+    <nav class="nav">
+
+      <img class="logo2" src="/images/Logo Pasteleria.png" alt="">
+      <button class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a href="/index.html" class="nav-menu-link nav-link">Inicio</a>
+        </li>
+        <li class="nav-menu-item"><a href="/Galeria.html" class="nav-menu-link nav-link">Galeria</a>
+        </li>
+        <li class="nav-menu-item"><a href="/Productos.html" class="nav-menu-link nav-link">Productos</a>
+        </li>
+        <li class="nav-menu-item"><a href="/Acerca de Nosotros.html" class="nav-menu-link nav-link">Acerca de
+            Nosotros</a>
+        </li>
+        <li class="nav-menu-item"><a href="Agregar Producto.html" class="nav-menu-link nav-link">Agregar Producto</a>
+        </li>
+
+      </ul>
+
+      <form >
+        <main class="container my-5"> 
+            <!-- Area de input -->
+            <section class="row">
+                <div class="col-12">
+                    <label>Nombre pastel</label>
+                  <input
+                  name = "pastel"
+                   type="text" 
+                  placeholder="Nombre del producto"
+                  required
+                  maxlength="50"
+                  minlength="5"
+                  class="form-control">
+                </div>
+                <div class="col-12">
+                    <label for=""> Precio</label>
+                    <input
+                    name = "precio"
+                    type="number"
+                    class="form-control"
+                    placeholder="Precio"
+                    required
+                    min="1"
+                    />
+                <div class="col-12">
+                    <label>Pastel</label>
+                    <input
+                    
+                    type="radio"
+                    name="radio"
+                    value="Pastel"
+                    class="form-control"
+                    />
+                </div>
+                <div class="col-12">
+                    <label>Box Party</label>
+                    <input
+                    
+                    type="radio"
+                    name="radio"
+                    value="Box Party"
+                    class="form-control"
+                    />
+                </div>
+                <div class="col-12">
+                    <label>Cupcakes</label>
+                    <input
+                    
+                    type="radio"
+                    name="radio"
+                    value="Cupcakes"
+                    class="form-control"
+                    />
+                </div>
+    
+                <div class="col-12">
+                    <label>imagen</label>
+                    <input
+                    name="imagen"
+                    id= "text" type="text"
+                    class="form-control"
+                    />
+                    <img id="cont"class="hola" src="https://thumbs.dreamstime.com/b/signo-de-interrogaci%C3%B3n-20881124.jpg" alt="hola">
+                </div>
+            </section>
+            <!-- Etiqueta para formulario -->
+            <section class="row">
+                <div class="col-12">
+                    <label>Escriba su comentario</label>
+                    <textarea
+                    name='comentario' 
+                    class="form-control"></textarea>
+                </div>
+            </section>
+            <br>
+    
+                <div class="col-12">
+                    <input
+                    name="boton"
+                    type="submit"
+                    class="btn btn-block btn-primary"
+                    value="enviar"
+                    />
+                </div>
+            
+           
+            
+           
+        
+        </main>
+    </form>
+       <script src="./js/prueba.js"></script>
+
+  </body>
+
+</html>
